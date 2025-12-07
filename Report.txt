@@ -1,44 +1,45 @@
-Name:
+Name:Nola Nelson
 
-Number of elements:
+Number of elements:10000
 
 Bubble Sort
-Sorted:
-Reversed:
-Random:
+Sorted:2.40723 seconds
+Reversed:5.52272 seconds
+Random:4.45763 seconds
 
 Bubble Sort Early Exit
-Sorted:
-Reversed:
-Random:
+Sorted:0.00056 seconds
+Reversed:5.66385 seconds
+Random:4.39656 seconds
 
 Selection Sort
-Sorted:
-Reversed:
-Random:
+Sorted:2.02751 seconds
+Reversed:1.87888 seconds
+Random:2.02747 seconds
 
 Insertion Sort
-Sorted:
-Reversed:
-Random:
+Sorted:0.00093 seconds
+Reversed:3.71214 seconds
+Random:1.86483 seconds
 
 Merge Sort
-Sorted:
-Reversed:
-Random:
+Sorted:0.01560 seconds
+Reversed:0.01627 seconds
+Random:0.01965 seconds
 
 Questions to answer:
 1) What was the worst case scenario for any sorting technique?
-
+Bubble Sort was the worst because it had the longest times.
 
 2) The first 3 sorts have the same runtime of O(n^2). Why were the times different? Why would one be more efficient than the others?
-
+They each do different types and amounts of work. Bubble sort does the full set of passes, bubble sort early exit stops when no swaps happen/the list is sorted, and selection sort always loops through all of the numbers that are left to find the largest or smallest number.
 
 3) Why was merge sort so much more efficient?
-
+Merge sort is more efficient because it divides the work up instead of doing the whole list at once. It also only uses comparisons instead of swapping the numbers.
 
 4) The built-in sorting technique for most programming languages is known as TimSort.
 This is a merge sort until the arrays have fewer than 10 elements, then it does an insertion sort. Why would this be useful?
-
+This would be useful because insertion sort is fast with smaller data and it has small loops. Merge sorting is better with larger amounts of data because it spits the list into smaller pieces.
 
 5) What issues can you see with a recursive sorting technique like merge sort?
+Even if the list is already sorted, it still does the same amount of work and goes through all of the steps. If the data is large, it might also use too much space because it makes copies of the data.
